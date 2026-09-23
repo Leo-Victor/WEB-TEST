@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reanty</title>
+		<!-- Google font: Plus Jarkata Sans / Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+		<!-- Link CSS -->
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+		<!-- TOP BAR -->
+		<div class="top-bar">
+			<div class="container top-bar-content">
+				<div class="top-left">
+					<span>✉ Info@webmail.com</span>
+					<span>📍 1245 Clover St, Single City, USA</span>
+				</div>
+				<div class="top-right">
+					<a href="#" class="social-link" aria-label="Facebook">
+						<img src="./Images/icons/facebook.png" alt="Facebook" />
+					</a>
+					<a href="#" class="social-link" aria-label="Twitter">
+						<img src="./Images/icons/twitter.png" alt="Twitter" />
+					</a>
+					<a href="#" class="social-link" aria-label="Instagram">
+						<img src="./Images/icons/instagram.png" alt="Instagram" />
+					</a>
+					<a href="#" class="social-link" aria-label="YouTube">
+						<img src="./Images/icons/youtube.png" alt="YouTube" />
+					</a>
+					<a href="#" class="social-link" aria-label="Pinterest">
+						<img src="./Images/icons/social.png" alt="Pinterest" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- HEADER NAVIGATION -->
+		<header class="header">
+			<div class="container navbar">
+				<!-- Logo bên trái -->
+				<div class="logo">
+					<div class="logo-circle-wrap">
+						<svg width="40" height="40" viewBox="0 0 44 44" fill="none">
+							<path d="M 36 12 A 16 16 0 1 0 38 28" stroke="#FF5E3A" stroke-width="4.5" stroke-linecap="round" />
+						</svg>
+						<span class="logo-inner-c">C</span>
+					</div>
+					<span class="logo-brand-text">Reanty<span class="dot">.</span></span>
+				</div>
+
+				<!-- Cụm bên phải: Gồm Login, Sign up và Nút 3 gạch -->
+				<div class="header-right-group">
+					<a href="#" class="btn-login">Login</a>
+					<a href="#" class="btn btn-primary btn-signup">Sign up</a>
+
+					<!-- Nút 3 gạch Hamburger -->
+					<input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+					<label for="menu-toggle" class="hamburger-icon" aria-label="Toggle Menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+
+					<!-- Menu sổ xuống (chứa các link điều hướng) -->
+					<nav class="nav-menu">
+						<a href="#" class="active">Home</a>
+						<a href="#">About</a>
+						<a href="#">Feature</a>
+						<a href="#">Market</a>
+						<a href="#">Services</a>
+						<a href="#">Contact</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- HERO SECTION -->
+			<section class="hero-section">
+				<div class="container hero-grid">
+					<div class="hero-content">
+						<div class="hero-title-container">
+							<h1 class="hero-title">
+								Find the best Real<br />
+								Estate on your<br />
+								country .
+							</h1>
+							<!-- Mũi tên cam uốn vòng tròn móc ngược rồi chỉ sang phải -->
+							<svg class="spiral-arrow-svg" width="160" height="100" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M 8 6 C 5 50, 40 70, 75 62 C 95 56, 102 30, 85 24 C 68 18, 62 48, 88 56 C 115 64, 138 52, 148 48" stroke="#FF5E3A" stroke-width="4" stroke-linecap="round" fill="none" />
+								<path d="M 134 39 L 152 47 L 138 59" stroke="#FF5E3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+						<p class="hero-desc">
+							With over 1 million homes for sale available on the<br />
+							website, Renting can match you with a house.
+						</p>
+						<a href="#" class="btn btn-primary btn-membership">
+							Start membership
+							<span class="arrow-icon">&rsaquo;</span>
+						</a>
+						<!--Search Filter Box-->
+						<div class="hero-search-box">
+							<div class="search-tab">
+								<span class="tab active">Rent</span>
+								<span class="tab">Buy</span>
+								<span class="tab">Sell</span>
+							</div>
+							<div class="search-inputs">
+								<div class="input-item">
+									<label>Location</label>
+									<input type="text" placeholder="Select your city" />
+								</div>
+								<div class="input-item">
+									<label>Property Type</label>
+									<input type="text" placeholder="Choose type" />
+								</div>
+								<div class="input-item">
+									<label>Price Range</label>
+									<input type="text" placeholder="$10,000 - $50,000" />
+								</div>
+								<button class="btn btn-search">🔍</button>
+							</div>
+						</div>
+					</div>
+					<div class="hero-media">
+						<div class="image-wrapper hero-img-wrap">
+							<div class="img-placeholder"></div>
+
+							<!-- Floating Badge Card-->
+							<div class="floating-badge badge-revenue">
+								<div class="badge-icon">📊</div>
+								<div>
+									<strong>$7454.21</strong>
+									<span>Revenue</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- GUiDES SECTION -->
+			<section class="guides-section">
+				<div class="container">
+					<div class="section-header text-center">
+						<h2>Commercial Real Estate And Office</h2>
+						<p>Find out how much home you can afford and calculate monthly payments.</p>
+					</div>
+					<div class="guides-grid">
+						<div class="guide-card">
+							<div class="guide-icon">👤</div>
+							<h3>Buyer Guides</h3>
+							<p>Find your place with an immersive photo experience and the most listings</p>
+						</div>
+						<div class="guide-card featured">
+							<div class="guide-icon">🏠</div>
+							<h3>Renter Guides</h3>
+							<p>We are creating a seamless online experience from shopping to applying.</p>
+						</div>
+						<div class="guide-card">
+							<div class="guide-icon">💼</div>
+							<h3>Seller Guides</h3>
+							<p>We can help you navigate a successful sale from start to finish.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- DREAM LIVING SPACES SECTION -->
+			<section class="spaces-section">
+				<div class="container two-col-grid">
+					<div class="spaces-media">
+						<div class="img-placeholder img-tall"></div>
+						<div class="rating-tag">⭐ 4.9 Rating</div>
+					</div>
+					<div class="spaces-content">
+						<h2>Dream Living Spaces Setting New Build</h2>
+						<p class="section-sub">We make sure you have the best possible experience when choosing your future house.</p>
+						<div class="feature-item">
+							<div class="f-icon">🏢</div>
+							<div>
+								<h4>The Perfect Residency</h4>
+								<p>Find a spacious home with an authentic neighborhood feeling</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="f-icon">📐</div>
+							<div>
+								<h4>Global Architect Experts</h4>
+								<p>Top structural designs crafted by award-winning enginears</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="f-icon">🔒</div>
+							<div>
+								<h4>Built-in Storage Capable</h4>
+								<p>Modern layouts maximizing functionality and security.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- TODAY SELLS SECTION -->
+			<section class="today-sells">
+				<div class="container two-col-grid reverse-mobile">
+					<div class="sells-content">
+						<span class="badge-sub">About Home</span>
+						<h2>Today Sells Properties</h2>
+						<p>Explore recently closed and high-demand properties verified by our certified team.</p>
+						<ul class="bullet-list">
+							<li>✔ Live Modern Apartment in Newyork</li>
+							<li>✔ Verified Green Villa Residence</li>
+							<li>✔ Eco-Friendly Residential Blocks</li>
+							<li>✔ Prime Commercial Townhouse</li>
+						</ul>
+					</div>
+					<div class="sells-media-grid">
+						<div class="img-placeholder grid-span-2"></div>
+						<div class="img-placeholder"></div>
+						<div class="img-placeholder"></div>
+					</div>
+				</div>
+			</section>
+			<!--SERVICES SECTION -->
+			<section class="services-section">
+				<div class="container">
+					<div class="section-header text-center">
+						<h2>Services provide for you</h2>
+						<p>We provide multiple facets of real estate services to satisfy all client inquiries.</p>
+					</div>
+					<div class="services-grid">
+						<div class="service-box">
+							<div class="s-icon">🛏️</div>
+							<h4>Bed Rooms</h4>
+							<p>Diverse styling options tailored to suit cozy modern lifestyles.</p>
+							<a href="#" class="learn-more">Learn more &rarr;</a>
+						</div>
+						<div class="service-box">
+							<div class="s-icon">🏊</div>
+							<h4>Swimming Pool</h4>
+							<p>Premium temperature-controlled indoor and infinity outdoor pools.</p>
+							<a href="#" class="learn-more">Learn more &rarr;</a>
+						</div>
+						<div class="service-box">
+							<div class="s-icon">📄</div>
+							<h4>Copywriting Content</h4>
+							<p>Transparent documentation and authentic property ownership records.</p>
+							<a href="#" class="learn-more">Learn more &rarr;</a>
+						</div>
+						<div class="service-box">
+							<div class="s-icon">🤖</div>
+							<h4>Smart Home</h4>
+							<p>State-of-the-art IoT automation for climate, lights, and locks.</p>
+							<a href="#" class="learn-more">Learn more &rarr;</a>
+						</div>
+						<div class="service-box">
+							<div class="s-icon">📚</div>
+							<h4>Library Area</h4>
+							<p>Quiet dedicated study halls designed for remote work focus.</p>
+							<a href="#" class="learn-more">Learn more &rarr;</a>
+						</div>
+						<div class="service-box">
+							<div class="s-icon">🛡️</div>
+							<h4>Responsive Duty</h4>
+							<p>Around-the-clock maintenance service and surveillance support.</p>
+							<a href="#" class="learn-more">Learn more &rarr;</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- FEATURED PROPERTIES -->
+			<section class="properties-section">
+				<div class="container">
+					<div class="section-header-flex">
+						<div>
+							<h2>Featured Property</h2>
+							<p>Find your suite in modern high-rises and stay safe.</p>
+						</div>
+						<div class="property-filter-nav">
+							<button class="p-tab active">Apartment</button>
+							<button class="p-tab">Villa</button>
+							<button class="p-tab">Land</button>
+						</div>
+					</div>
+					<div class="properties-grid">
+						<div class="property-card">
+							<div class="img-placeholder card-thumb"></div>
+							<div class="card-body">
+								<h4>The Stokes Apartment</h4>
+								<p class="loc">📍 Cleveland, United States</p>
+								<div class="card-footer">
+									<span class="price">$2,32,120</span>
+									<a href="#" class="btn-arrow">&rarr;</a>
+								</div>
+							</div>
+						</div>
+						<div class="property-card">
+							<div class="img-placeholder card-thumb"></div>
+							<div class="card-body">
+								<h4>The Stokes Apartment</h4>
+								<p class="loc">📍 Cleveland, United States</p>
+								<div class="card-footer">
+									<span class="price">$2,32,120</span>
+									<a href="#" class="btn-arrow">&rarr;</a>
+								</div>
+							</div>
+						</div>
+						<div class="property-card">
+							<div class="img-placeholder card-thumb"></div>
+							<div class="card-body">
+								<h4>The Stokes Apartment</h4>
+								<p class="loc">📍 Cleveland, United States</p>
+								<div class="card-footer">
+									<span class="price">$2,32,120</span>
+									<a href="#" class="btn-arrow">&rarr;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- TESTIMONIALS -->
+			<section class="testimonial-section">
+				<div class="container">
+					<div class="section-header text-center">
+						<h2>What our customers are saying</h2>
+						<p>Real experiences from buyers and investors worldwide.</p>
+					</div>
+					<div class="testimonial-wrapper">
+						<div class="client-avatar-frame">
+							<div class="avatar-backdrop"></div>
+							<div class="img-placeholder avatar-img"></div>
+						</div>
+						<div class="testimonial-content">
+							<div class="quote-mark">“</div>
+							<p class="quote-text">We make sure you have a fine distance with the sickness. We make you never lose hope. Truly the smoothest apartment hunt experience.</p>
+							<div class="stars">★★★★★</div>
+							<h5>Yunus Seyhan</h5>
+							<small>Co-Founder & Director</small>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROJECTS & NEWSLETTER -->
+			<section class="newsletter-section">
+				<div class="container text-center">
+					<h2>We build more projects successful</h2>
+					<div class="project-tags">
+						<div class="p-box">San Francisco, California</div>
+						<div class="p-box">Washington DC</div>
+						<div class="p-box">Chicago</div>
+					</div>
+					<form class="newsletter-form" onsubmit="event.preventDefault()">
+						<input type="email" placeholder="Enter your email here..." required />
+						<button type="submit" class="btn btn-primary">Subscribe</button>
+					</form>
+				</div>
+			</section>
+
+			<!-- BLOG SECTION -->
+			<section class="blog-section">
+				<div class="container">
+					<div class="section-header text-center">
+						<h2>From our blog</h2>
+						<p>Latest market insights, architectural trends, and advice.</p>
+					</div>
+					<div class="blog-grid">
+						<article class="blog-card">
+							<div class="img-placeholder blog-thumb"></div>
+							<div class="blog-info">
+								<h4>How to rent a home very easily?</h4>
+								<p>Explore tactical budgeting and legal checklists when entering contracts.</p>
+								<div class="blog-meta">
+									<span>🕒 3 years ago</span>
+									<span>✍️ Admin</span>
+								</div>
+							</div>
+						</article>
+						<article class="blog-card">
+							<div class="img-placeholder blog-thumb"></div>
+							<div class="blog-info">
+								<h4>How to rent a home very easily?</h4>
+								<p>Explore tactical budgeting and legal checklists when entering contracts.</p>
+								<div class="blog-meta">
+									<span>🕒 3 years ago</span>
+									<span>✍️ Admin</span>
+								</div>
+							</div>
+						</article>
+						<article class="blog-card">
+							<div class="img-placeholder blog-thumb"></div>
+							<div class="blog-info">
+								<h4>How to rent a home very easily?</h4>
+								<p>Explore tactical budgeting and legal checklists when entering contracts.</p>
+								<div class="blog-meta">
+									<span>🕒 3 years ago</span>
+									<span>✍️ Admin</span>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- CONTACT SECTION -->
+			<section class="contact-section">
+				<div class="container">
+					<div class="section-header text-center">
+						<span class="sub-title-orange">Contact with us</span>
+						<h2>Looking For To Buy A Property?</h2>
+					</div>
+					<div class="contact-grid">
+						<div class="contact-text">
+							<p>Browse our property listing and find your best and suitable home or house for sale, rent and buying. It's so easy and fast.</p>
+							<ul class="bullet-list orange-check">
+								<li>✔ Architecto beatae vitae dicta sunt</li>
+								<li>✔ Largest global RealEstate market</li>
+								<li>✔ Nor again is there anyone</li>
+							</ul>
+							<div class="img-placeholder contact-illu"></div>
+						</div>
+						<div class="contact-form-box">
+							<h3>Contact Us</h3>
+							<form onsubmit="event.preventDefault()">
+								<div class="form-group">
+									<label>Name</label>
+									<input type="text" placeholder="Enter your name" required />
+								</div>
+								<div class="form-group">
+									<label>Email</label>
+									<input type="email" placeholder="Enter your email" required />
+								</div>
+								<div class="form-group">
+									<label>Message</label>
+									<textarea rows="4" placeholder="Enter your message"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary btn-block">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container footer-top">
+				<div class="footer-col brand-col">
+					<div class="logo light"><span class="logo-icon">🏠</span> Reanty<span class="dot">.</span></div>
+					<p>With over 1 million homes for sale available on the website.</p>
+					<div class="social-links">
+						<a href="#">in</a>
+						<a href="#">f</a>
+						<a href="#">t</a>
+					</div>
+				</div>
+				<div class="footer-col">
+					<h5>Company</h5>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">How we work?</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h5>Contact</h5>
+					<ul>
+						<li><a href="#">Help/FAQ</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Affiliates</a></li>
+						<li><a href="#">Property owners</a></li>
+						<li><a href="#">Partners</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h5>More</h5>
+					<ul>
+						<li><a href="#">Land fees</a></li>
+						<li><a href="#">Property</a></li>
+						<li><a href="#">Law tips</a></li>
+						<li><a href="#">Badges</a></li>
+						<li><a href="#">Privacy</a></li>
+					</ul>
+				</div>
+				<div class="footer-col office-col">
+					<h5>Head Office</h5>
+					<p>Xilliams Corner Wine © 2017, 1112 A Market St # Ste B22, Charlottesville, CA 45565</p>
+					<h5>News letter</h5>
+					<div class="mini-newsletter">
+						<input type="email" placeholder="Enter your email address" />
+						<button>✉</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="container footer-bottom">
+				<div class="contact-info-strip">
+					<span>email@gmail.com</span>
+					<span>(123) 456-7890</span>
+				</div>
+				<p class="copyright">© 2026 Reanty. All rights reserved.</p>
+			</div>
+			<div class="footer-orange-bar"></div>
+		</footer>
+	</body>
+</html>
