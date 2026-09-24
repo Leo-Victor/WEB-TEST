@@ -20,10 +20,9 @@
 					<span class="top-address">📍 547 ns tower St. anglo City, USA</span>
 				</div>
 				<div class="top-right">
-					<a href="#" class="social-link" aria-label="LinkedIn">in</a>
-					<a href="#" class="social-link" aria-label="Facebook">f</a>
-					<a href="#" class="social-link" aria-label="Twitter">t</a>
-					<a href="#" class="social-link" aria-label="Instagram">ig</a>
+					<a href="#" aria-label="Social Media Links">
+						<img src="Images/icons/social_icon.png" alt="Social Icons" class="top-social-img" />
+					</a>
 				</div>
 			</div>
 		</div>
@@ -31,15 +30,9 @@
 		<!-- HEADER NAVIGATION -->
 		<header class="header">
 			<div class="container navbar">
-				<!-- Logo -->
+				<!-- Logo Reanty -->
 				<a href="#" class="logo">
-					<div class="logo-circle-wrap">
-						<svg width="40" height="40" viewBox="0 0 44 44" fill="none">
-							<path d="M 36 12 A 16 16 0 1 0 38 28" stroke="#FF5E3A" stroke-width="4.5" stroke-linecap="round" />
-						</svg>
-						<span class="logo-inner-c">C</span>
-					</div>
-					<span class="logo-brand-text">Reanty<span class="dot">.</span></span>
+					<img src="Images/icons/Logo.png" alt="Reanty Logo" class="logo-img" />
 				</a>
 
 				<!-- Right Group & Navigation -->
@@ -54,7 +47,7 @@
 
 					<!-- Mobile Navigation Menu -->
 					<nav class="nav-menu">
-						<a href="#" class="active">Home</a>
+						<a href="#home" class="active">Home</a>
 						<a href="#about">About</a>
 						<a href="#feature">Feature</a>
 						<a href="#market">Market</a>
@@ -77,7 +70,7 @@
 
 		<main>
 			<!-- HERO SECTION -->
-			<section class="hero-section">
+			<section class="hero-section" id="home">
 				<div class="container hero-grid">
 					<div class="hero-content">
 						<div class="hero-title-container">
@@ -86,10 +79,10 @@
 								Estate on your<br />
 								country .
 							</h1>
-							<!-- Spiral Orange Arrow SVG -->
-							<svg class="spiral-arrow-svg" width="160" height="100" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M 8 6 C 5 50, 40 70, 75 62 C 95 56, 102 30, 85 24 C 68 18, 62 48, 88 56 C 115 64, 138 52, 148 48" stroke="#FF5E3A" stroke-width="4" stroke-linecap="round" fill="none" />
-								<path d="M 134 39 L 152 47 L 138 59" stroke="#FF5E3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+							<!-- Spiral Orange Arrow SVG (Item 4) -->
+							<svg class="spiral-arrow-svg" width="170" height="95" viewBox="0 0 170 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M 8 12 C 5 50, 45 70, 78 60 C 98 50, 102 24, 82 20 C 62 16, 58 48, 82 58 C 108 68, 140 55, 155 48" stroke="#FF5E3A" stroke-width="6" stroke-linecap="round" fill="none" />
+								<path d="M 142 38 L 162 47 L 145 60" stroke="#FF5E3A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
 							</svg>
 						</div>
 						<p class="hero-desc">
@@ -101,27 +94,18 @@
 							<span class="arrow-icon">&rsaquo;</span>
 						</a>
 
-						<!-- Search Filter Box -->
-						<div class="hero-search-box">
-							<div class="search-tabs">
-								<span class="tab active">Rent</span>
-								<span class="tab">Buy</span>
-								<span class="tab">Sell</span>
+						<!-- House Slider Widget (Matching Figma Image 2) -->
+						<div class="house-slider-widget">
+							<div class="house-steps">
+								<div class="step step-1"><span>HOUSE 1</span></div>
+								<div class="step step-2"><span>HOUSE 2</span></div>
+								<div class="step step-3"><span>HOUSE 3</span></div>
 							</div>
-							<div class="search-inputs">
-								<div class="input-item">
-									<label>Location</label>
-									<input type="text" placeholder="Select your city" />
-								</div>
-								<div class="input-item">
-									<label>Property Type</label>
-									<input type="text" placeholder="Choose type" />
-								</div>
-								<div class="input-item">
-									<label>Price Range</label>
-									<input type="text" placeholder="$10,000 - $50,000" />
-								</div>
-								<button class="btn btn-search" aria-label="Search">🔍</button>
+							<div class="house-pagination">
+								<span class="line"></span>
+								<span class="page active">1</span>
+								<span class="page">2</span>
+								<span class="page">3</span>
 							</div>
 						</div>
 					</div>
@@ -130,19 +114,19 @@
 						<div class="hero-img-wrap">
 							<div class="img-placeholder hero-img"></div>
 
-							<!-- Floating Revenue Badge -->
+							<!-- Floating Revenue Badge (Item 5) -->
 							<div class="floating-badge badge-revenue">
-								<div class="badge-icon">📊</div>
-								<div>
+								<img src="Images/icons/increase 1.png" alt="Revenue Increase" class="revenue-icon-img" />
+								<div class="badge-text-group">
 									<strong>$7454.21</strong>
 									<span>Revenue</span>
 								</div>
 							</div>
 
-							<!-- Floating How It Works Button -->
+							<!-- Floating How It Works Button (Item 6) -->
 							<button class="how-it-works-btn">
-								<span>How It Works</span>
-								<span class="play-icon">▶</span>
+								<span class="btn-text">How it works</span>
+								<span class="play-circle"><span class="play-triangle">▶</span></span>
 							</button>
 						</div>
 					</div>
@@ -158,17 +142,23 @@
 					</div>
 					<div class="guides-grid">
 						<div class="guide-card">
-							<div class="guide-icon-circle">👤</div>
+							<div class="guide-icon-circle">
+								<img src="Images/icons/noun_buyer_427240.png" alt="Buyer Guides Icon" class="guide-icon-img" />
+							</div>
 							<h3>Buyer Guides</h3>
 							<p>Nurture valuable leads into customers, and turn one time.</p>
 						</div>
 						<div class="guide-card featured">
-							<div class="guide-icon-circle">🏠</div>
+							<div class="guide-icon-circle">
+								<img src="Images/icons/noun_seller_3414715.png" alt="Renter Guides Icon" class="guide-icon-img" />
+							</div>
 							<h3>Renter Guides</h3>
 							<p>Build brand awareness on the top social media networks.</p>
 						</div>
 						<div class="guide-card">
-							<div class="guide-icon-circle">💼</div>
+							<div class="guide-icon-circle">
+								<img src="Images/icons/noun_rent_3302615.png" alt="Seller Guides Icon" class="guide-icon-img" />
+							</div>
 							<h3>Seller Guides</h3>
 							<p>Get professionally-written content that attracts qualified.</p>
 						</div>
@@ -180,8 +170,14 @@
 			<section class="spaces-section" id="feature">
 				<div class="container two-col-grid">
 					<div class="spaces-media">
-						<div class="img-placeholder img-tall"></div>
-						<div class="rating-tag">★ 5 Star Rating</div>
+						<div class="spaces-img-wrap">
+							<div class="img-placeholder spaces-img-main"></div>
+							<div class="img-placeholder spaces-img-sub"></div>
+						</div>
+						<div class="rating-tag-box">
+							<img src="Images/icons/Star 1.png" alt="Star Rating" class="star-icon-img" />
+							<span>5 Star Rating</span>
+						</div>
 					</div>
 					<div class="spaces-content">
 						<h2>Dream Living Spaces Setting New Build</h2>
@@ -225,6 +221,21 @@
 							<li><span class="check-mark">■</span> Our best boat Tour is j us t for you</li>
 							<li><span class="check-mark">■</span> Live Music concert at Newyork</li>
 						</ul>
+
+						<!-- House Slider Widget (Matching Figma Today Sells Section) -->
+						<div class="house-slider-widget mt-30">
+							<div class="house-steps">
+								<div class="step step-1"><span>HOUSE 1</span></div>
+								<div class="step step-2"><span>HOUSE 2</span></div>
+								<div class="step step-3"><span>HOUSE 3</span></div>
+							</div>
+							<div class="house-pagination">
+								<span class="line"></span>
+								<span class="page active">1</span>
+								<span class="page">2</span>
+								<span class="page">3</span>
+							</div>
+						</div>
 					</div>
 					<div class="sells-media-grid">
 						<div class="img-placeholder grid-span-tall"></div>
@@ -297,14 +308,19 @@
 						</div>
 					</div>
 					<div class="properties-grid">
-						<div class="property-card">
+						<div class="property-card active">
 							<div class="img-placeholder card-thumb"></div>
 							<div class="card-body">
 								<h4>The Stokes Appartment</h4>
-								<p class="loc">📍 Cleveland, United States</p>
+								<p class="loc">
+									<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 4px; display: inline-block;">
+										<path d="M6 0C2.686 0 0 2.686 0 6C0 10.5 6 14 6 14C6 14 12 10.5 12 6C12 2.686 9.314 0 6 0ZM6 8.25C4.757 8.25 3.75 7.243 3.75 6C3.75 4.757 4.757 3.75 6 3.75C7.243 3.75 8.25 4.757 8.25 6C8.25 7.243 7.243 8.25 6 8.25Z" fill="#828282"/>
+									</svg>
+									Cleveland, United States
+								</p>
 								<div class="card-footer">
 									<span class="price">$2,32,120</span>
-									<a href="#" class="btn-arrow">&rarr;</a>
+									<a href="#" class="btn-arrow" aria-label="View Details">&rarr;</a>
 								</div>
 							</div>
 						</div>
@@ -312,10 +328,15 @@
 							<div class="img-placeholder card-thumb"></div>
 							<div class="card-body">
 								<h4>The Stokes Appartment</h4>
-								<p class="loc">📍 Cleveland, United States</p>
+								<p class="loc">
+									<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 4px; display: inline-block;">
+										<path d="M6 0C2.686 0 0 2.686 0 6C0 10.5 6 14 6 14C6 14 12 10.5 12 6C12 2.686 9.314 0 6 0ZM6 8.25C4.757 8.25 3.75 7.243 3.75 6C3.75 4.757 4.757 3.75 6 3.75C7.243 3.75 8.25 4.757 8.25 6C8.25 7.243 7.243 8.25 6 8.25Z" fill="#828282"/>
+									</svg>
+									Cleveland, United States
+								</p>
 								<div class="card-footer">
 									<span class="price">$2,32,120</span>
-									<a href="#" class="btn-arrow">&rarr;</a>
+									<a href="#" class="btn-arrow" aria-label="View Details">&rarr;</a>
 								</div>
 							</div>
 						</div>
@@ -323,40 +344,62 @@
 							<div class="img-placeholder card-thumb"></div>
 							<div class="card-body">
 								<h4>The Stokes Appartment</h4>
-								<p class="loc">📍 Cleveland, United States</p>
+								<p class="loc">
+									<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 4px; display: inline-block;">
+										<path d="M6 0C2.686 0 0 2.686 0 6C0 10.5 6 14 6 14C6 14 12 10.5 12 6C12 2.686 9.314 0 6 0ZM6 8.25C4.757 8.25 3.75 7.243 3.75 6C3.75 4.757 4.757 3.75 6 3.75C7.243 3.75 8.25 4.757 8.25 6C8.25 7.243 7.243 8.25 6 8.25Z" fill="#828282"/>
+									</svg>
+									Cleveland, United States
+								</p>
 								<div class="card-footer">
 									<span class="price">$2,32,120</span>
-									<a href="#" class="btn-arrow">&rarr;</a>
+									<a href="#" class="btn-arrow" aria-label="View Details">&rarr;</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="text-center mt-30">
-						<a href="#" class="btn btn-outline-primary">Explore Property</a>
+						<a href="#" class="btn btn-explore">Explore Property</a>
 					</div>
 				</div>
 			</section>
 
-			<!-- VIDEO BANNER SECTION -->
+			<!-- VIDEO BANNER SECTION (Full Width Edge-to-Edge Gray Section) -->
 			<section class="video-banner-section">
-				<div class="container">
-					<div class="video-banner-box">
-						<div class="img-placeholder video-banner-img"></div>
-						<!-- Floating property card -->
-						<div class="floating-prop-card">
-							<div class="prop-card-thumb">🏡</div>
-							<div class="prop-card-info">
-								<strong>$4,000</strong>
-								<small>242 Metric way</small>
-								<div class="prop-specs">
-									<span>🛏️ 2</span>
-									<span>🛁 2</span>
-									<span>📐 500sqf</span>
+				<div class="container video-banner-container">
+					<!-- Floating property card -->
+					<div class="floating-prop-card">
+						<div class="prop-card-media">
+							<img src="Images/Rectangle 4311.png" alt="Property Image" class="prop-card-img" />
+							<div class="coin-badge">
+								<img src="Images/icons/coin 1.png" alt="Coin Icon" class="coin-icon-img" />
+							</div>
+						</div>
+						<div class="prop-card-info">
+							<h3 class="prop-price">$4,000</h3>
+							<p class="prop-address">242 Metric way</p>
+							<div class="prop-specs">
+								<div class="spec-item">
+									<div class="spec-icon-circle">
+										<img src="Images/icons/Vector.png" alt="Bed Icon" class="spec-icon" />
+									</div>
+									<span class="spec-num">2</span>
+								</div>
+								<div class="spec-item">
+									<div class="spec-icon-circle">
+										<img src="Images/icons/Vector (1).png" alt="Bath Icon" class="spec-icon" />
+									</div>
+									<span class="spec-num">2</span>
+								</div>
+								<div class="spec-item">
+									<div class="spec-icon-circle">
+										<img src="Images/icons/Vector (2).png" alt="Ruler Icon" class="spec-icon" />
+									</div>
+									<span class="spec-num">500sqf</span>
 								</div>
 							</div>
 						</div>
-						<div class="badge-unit-no">UNIT NO. <span>9A</span></div>
 					</div>
+					<div class="badge-unit-no">UNIT NO. <span>9A</span></div>
 				</div>
 			</section>
 
@@ -380,7 +423,7 @@
 							<h5>Yunus Seyhan</h5>
 							<small>Postgraduate Student</small>
 						</div>
-						<button class="nav-arrow nav-arrow-right" aria-label="Next">&rsaquo;</button>
+						<button class="nav-arrow nav-arrow-right" aria-label="Next">▶</button>
 					</div>
 				</div>
 			</section>
@@ -508,14 +551,14 @@
 		<footer class="footer">
 			<div class="container footer-top">
 				<div class="footer-col brand-col">
-					<div class="logo light">
-						<span class="logo-icon-orange">🏠</span> Reanty<span class="dot">.</span>
-					</div>
+					<a href="#" class="logo light">
+						<img src="Images/icons/Logo.png" alt="Reanty Logo" class="logo-img logo-img-light" />
+					</a>
 					<p>With over 1 million homes for sale available on the website.</p>
 					<div class="social-links">
-						<a href="#" aria-label="LinkedIn">in</a>
-						<a href="#" aria-label="Facebook">f</a>
-						<a href="#" aria-label="Twitter">t</a>
+						<a href="#" aria-label="Social Media Links">
+							<img src="Images/icons/social_icon.png" alt="Social Icons" class="footer-social-img" />
+						</a>
 					</div>
 				</div>
 				<div class="footer-col">
@@ -568,5 +611,6 @@
 			</div>
 			<div class="footer-orange-bar"></div>
 		</footer>
+
 	</body>
 </html>
