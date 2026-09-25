@@ -2210,23 +2210,38 @@ img {
 	.spaces-img-wrap {
 		width: 100% !important;
 		position: relative !important;
+		height: 270px !important;
+		margin-top: 15px !important;
 	}
 
 	.spaces-img-main {
-		height: 260px !important;
-		border-radius: 18px !important;
+		width: 62% !important;
+		height: 240px !important;
+		margin-left: auto !important;
+		background-color: #C4C4C4 !important;
+		border-radius: 0 !important;
 	}
 
 	.spaces-img-sub {
-		display: none !important;
+		display: block !important;
+		position: absolute !important;
+		left: 0 !important;
+		top: 25px !important;
+		width: 62% !important;
+		height: 240px !important;
+		background-color: #C4C4C4 !important;
+		border-radius: 0 !important;
+		z-index: 1 !important;
 	}
 
 	.rating-tag-box {
 		position: absolute !important;
-		right: 12px !important;
-		top: 12px !important;
-		padding: 8px 14px !important;
-		font-size: 0.8rem !important;
+		right: 0px !important;
+		top: -10px !important;
+		padding: 12px 14px 20px !important;
+		font-size: 0.75rem !important;
+		z-index: 5 !important;
+		min-width: 70px !important;
 	}
 
 	/* Single Column Grids for Mobile */
@@ -2244,13 +2259,23 @@ img {
 	}
 
 	.sells-media-grid {
-		grid-template-columns: 1fr;
-		gap: 16px;
+		display: grid !important;
+		grid-template-columns: 1fr 1fr !important;
+		gap: 10px !important;
+	}
+
+	.sells-media-grid .img-placeholder {
+		height: 125px !important;
+		background-color: #C4C4C4 !important;
+		border-radius: 0 !important;
 	}
 
 	.grid-span-tall {
-		grid-row: span 1;
-		height: 200px;
+		grid-row: span 2 !important;
+		height: 100% !important;
+		min-height: 260px !important;
+		background-color: #C4C4C4 !important;
+		border-radius: 0 !important;
 	}
 
 	/* Video Banner & Floating Property Card Mobile */
