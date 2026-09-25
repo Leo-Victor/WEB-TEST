@@ -2078,13 +2078,17 @@ img {
 		line-height: 1.25;
 	}
 
-	/* .spiral-arrow-img {
-		width: 90px;
-		height: auto;
-		right: 0px;
-		bottom: -10px;
-		transform: none;
-	} */
+	.spiral-arrow-img {
+		position: absolute !important;
+		width: 105px !important;
+		height: auto !important;
+		right: -36px !important;
+		top: 52px !important;
+		bottom: auto !important;
+		transform: none !important;
+		pointer-events: none !important;
+		z-index: 2 !important;
+	}
 
 	.hero-desc {
 		font-size: 0.95rem;
