@@ -2110,6 +2110,22 @@ img {
 		width: 20px !important;
 	}
 
+	/* Synchronized Mobile Section Titles (2.0rem) */
+	.section-header h2,
+	.spaces-content h2,
+	.sells-content h2,
+	.contact-section h2,
+	.newsletter-section h2 {
+		font-size: 2.0rem !important;
+		line-height: 1.25 !important;
+		margin-bottom: 12px !important;
+	}
+
+	.spaces-content {
+		margin-left: 0 !important;
+		margin-bottom: 30px !important;
+	}
+
 	/* Dream Living Spaces Mobile */
 	.spaces-media {
 		position: relative !important;
@@ -2345,8 +2361,13 @@ img {
 
 /* Small Mobile Screens (<= 480px) */
 @media (max-width: 480px) {
-	.section-header h2 {
-		font-size: 1.65rem !important;
+	.section-header h2,
+	.spaces-content h2,
+	.sells-content h2,
+	.contact-section h2,
+	.newsletter-section h2 {
+		font-size: 1.85rem !important;
+		line-height: 1.25 !important;
 	}
 
 	.hero-title {
