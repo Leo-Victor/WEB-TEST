@@ -14,6 +14,7 @@
 	--border-color: #e2e8f0;
 	--border-radius: 10px;
 	--box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+	--box-shadow2: 0 10px 30px rgba(255, 94, 58, 0.15);
 	--font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
 	--transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -29,7 +30,6 @@
 
 html {
 	scroll-behavior: smooth;
-	overflow-x: clip;
 }
 
 body {
@@ -37,7 +37,6 @@ body {
 	color: var(--text-dark);
 	background-color: #ffffff;
 	line-height: 1.6;
-	overflow-x: clip;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -175,7 +174,21 @@ img {
 
 .top-left {
 	display: flex;
+	align-items: center;
 	gap: 20px;
+}
+
+.top-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.top-icon-img {
+	width: 14px;
+	height: 14px;
+	object-fit: contain;
+	display: inline-block;
 }
 
 .top-right {
@@ -347,10 +360,13 @@ img {
 	color: #071c1f;
 }
 
-.spiral-arrow-svg {
+.spiral-arrow-img {
 	position: absolute;
-	right: -50px;
-	bottom: -10px;
+	width: 185px;
+	height: auto;
+	right: -42px;
+	bottom: 10px;
+	transform: none;
 	pointer-events: none;
 	z-index: 2;
 }
@@ -397,24 +413,24 @@ img {
 
 .house-steps .step-1,
 .house-steps .step-4 {
-	height: 85px;
+	height: 86px;
 	background: #9E9E9E;
 
 }
 
 .house-steps .step-2 {
-	height: 48px;
+	height: 62px;
 	background: #9E9E9E;
 }
 
 .house-steps .step-5 {
-	height: 60px;
+	height: 72px;
 	background: #9E9E9E;
 }
 
 .house-steps .step-3,
 .house-steps .step-6 {
-	height: 48px;
+	height: 63px;
 	background: #9E9E9E;
 	border-top-right-radius: 6px;
 }
@@ -431,9 +447,9 @@ img {
 }
 
 .house-pagination .line {
-	width: 32px;
-	height: 3px;
-	background: #071C1F;
+	width: 60px;
+	height: 2.8px;
+	background: linear-gradient(to right, #ff5e3a 33.33%, #c4c4c4 33.33%);
 	border-radius: 2px;
 }
 
@@ -568,15 +584,15 @@ img {
 
 .guide-card {
 	background: var(--bg-card);
-	aspect-ratio: 1 / 1;
+	aspect-ratio: 0.95 / 0.95;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 35px 28px;
+	padding: 25px 20px;
 	border-radius: 20px;
 	text-align: center;
-	box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow2);
 	transition: var(--transition);
 	border: 1px solid var(--border-color);
 }
@@ -771,7 +787,7 @@ img {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	color: var(--primary-color);
+	color: black;
 	font-weight: 600;
 	font-size: 0.95rem;
 	text-transform: none;
@@ -900,7 +916,22 @@ img {
 .learn-more {
 	font-size: 0.85rem;
 	font-weight: 700;
-	color: #000000;
+	color: #071c1f;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.learn-more-arrow-img {
+	width: 12px;
+	height: auto;
+	object-fit: contain;
+	display: inline-block;
+	transition: var(--transition);
+}
+
+.service-box:hover .learn-more-arrow-img {
+	transform: translateX(3px);
 }
 
 /* 9. FEATURED PROPERTIES */
@@ -1021,6 +1052,14 @@ img {
 	padding-right: 18px;
 }
 
+.loc-icon-img {
+	width: 12px;
+	height: 14px;
+	object-fit: contain;
+	margin-right: 6px;
+	display: inline-block;
+}
+
 .card-footer {
 	display: flex;
 	justify-content: space-between;
@@ -1053,6 +1092,13 @@ img {
 	font-size: 1.15rem;
 	transition: var(--transition);
 	flex-shrink: 0;
+}
+
+.btn-arrow-icon-img {
+	width: 14px;
+	height: auto;
+	object-fit: contain;
+	display: block;
 }
 
 .property-card.active .btn-arrow {
@@ -1505,8 +1551,17 @@ img {
 	background: #ffffff;
 	border-radius: 0 !important;
 	overflow: hidden;
-	box-shadow: none;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
 	border: 1px solid #e2e8f0;
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.blog-card:hover,
+.blog-card.active {
+	transform: translateY(-8px);
+	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+	border-color: transparent;
 }
 
 .blog-thumb {
@@ -1610,6 +1665,8 @@ img {
 .contact-text p {
 	color: var(--text-gray);
 	margin-bottom: 20px;
+	max-width: 390px;
+	line-height: 1.6;
 }
 
 .orange-check li {
@@ -1761,6 +1818,11 @@ img {
 	font-weight: 700;
 }
 
+.footer-col p {
+	font-size: 0.85rem;
+	font-weight: 500;
+}
+
 .footer-col ul li {
 	margin-bottom: 10px;
 	font-size: 0.85rem;
@@ -1834,24 +1896,18 @@ img {
 }
 
 .footer-bottom {
-	display: grid;
-	grid-template-columns: 1.5fr 2fr 1.5fr;
+	display: flex;
 	align-items: center;
-	padding: 30px 0;
+	justify-content: center;
+	gap: 180px;
+	padding: 20px 0;
 	font-size: 0.85rem;
 }
 
-.footer-email {
-	text-align: left;
-}
-
-.footer-phone {
-	text-align: center;
-}
-
+.footer-email,
+.footer-phone,
 .footer-bottom .copyright {
-	text-align: right;
-	color: #6c757d;
+	text-align: center;
 }
 
 .footer-email a,
@@ -1935,6 +1991,14 @@ img {
 	}
 
 	/* Header & Hamburger Menu */
+	.header {
+		position: sticky !important;
+		top: 0 !important;
+		z-index: 1000 !important;
+		background: #ffffff !important;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+	}
+
 	.desktop-auth-actions {
 		display: none;
 	}
@@ -2014,12 +2078,13 @@ img {
 		line-height: 1.25;
 	}
 
-	.spiral-arrow-svg {
+	/* .spiral-arrow-img {
 		width: 90px;
-		height: 60px;
-		right: 0;
-		bottom: -15px;
-	}
+		height: auto;
+		right: 0px;
+		bottom: -10px;
+		transform: none;
+	} */
 
 	.hero-desc {
 		font-size: 0.95rem;
@@ -2092,14 +2157,17 @@ img {
 		height: 50px !important;
 	}
 
-	.house-steps .step-2,
+	.house-steps .step-2 {
+		height: 35px !important;
+	}
+
 	.house-steps .step-5 {
-		height: 38px !important;
+		height: 42px !important;
 	}
 
 	.house-steps .step-3,
 	.house-steps .step-6 {
-		height: 28px !important;
+		height: 35px !important;
 	}
 
 	.house-pagination {
@@ -2121,15 +2189,21 @@ img {
 		margin-bottom: 12px !important;
 	}
 
+	/* Dream Living Spaces Mobile: Reorder text content to top and image block to bottom */
+	.spaces-section .two-col-grid {
+		display: flex !important;
+		flex-direction: column-reverse !important;
+	}
+
 	.spaces-content {
 		margin-left: 0 !important;
 		margin-bottom: 30px !important;
 	}
 
-	/* Dream Living Spaces Mobile */
 	.spaces-media {
 		position: relative !important;
-		margin-bottom: 20px !important;
+		margin-top: 10px !important;
+		margin-bottom: 0 !important;
 		width: 100% !important;
 	}
 
@@ -2361,6 +2435,7 @@ img {
 
 /* Small Mobile Screens (<= 480px) */
 @media (max-width: 480px) {
+
 	.section-header h2,
 	.spaces-content h2,
 	.sells-content h2,
